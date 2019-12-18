@@ -3,7 +3,7 @@
     image: vimagick/glances
     env_file:
       - ./services/glances/glances.env
-    entrypoint: /init
+#    entrypoint: /init
     command: ["/bin/sh", "-c", "python", "-m", "glances", "$GLANCES_OPT"]
     restart: always
     network_mode: host
