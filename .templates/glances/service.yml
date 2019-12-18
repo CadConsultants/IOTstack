@@ -1,0 +1,17 @@
+  glances:
+    container_name: Glances
+    image: vimagick/glances
+    env_file:
+      - ./services/glances/glances.env
+    entrypoint: /init
+    command: ["/bin/sh", "-c", "python", "-m", "glances", "$GLANCES_OPT"]
+    restart: always
+    network_mode: host
+    pid: host
+    volumes:
+      - /mnt/glances/skylab/etc:/etc/glances
+      - /mnt/glances/skylab/glances.conf:/glances/conf/glances.conf
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /mnt/ssl:/ssl
+    build: ./services/glances/.
+

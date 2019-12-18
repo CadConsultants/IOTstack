@@ -7,8 +7,9 @@
       - 8081:8081
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./volumes/motioneye/etc_motioneye:/etc/motioneye
-      - ./volumes/motioneye/var_lib_motioneye:/var/lib/motioneye
+      - /mnt/motioneye/etc:/etc/motioneye
+      - /mnt/motioneye/var:/var/lib/motioneye
+      - /mnt/ssl:/ssl
     #devices:
     #  - "/dev/video0:/dev/video0"
 
