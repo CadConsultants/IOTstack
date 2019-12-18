@@ -6,6 +6,8 @@ IOTstack is a builder for docker-compose to easily make and maintain IoT stacks 
 
 The bulk of the README has moved to the Wiki. Please check it out [here](https://github.com/gcgarner/IOTstack/wiki)
 
+* 2019-12-18 modified various templates for /mnt/... volumes
+* 2019-12-18 Added Glances templates to the stack
 * 2019-12-12 modified zigbee2mqtt template file
 * 2019-12-12 Added Function to add custom containers to the stack
 * 2019-12-12 PR cmskedgell: Added Homebridge
@@ -74,6 +76,7 @@ This Docker stack consists of:
 * MariaDB
 * Plex
 * Homebridge
+* Glances
 
 In addition, there is a write-up and some scripts to get a dynamic DNS via duckdns and VPN up and running.
 
