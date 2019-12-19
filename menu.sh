@@ -28,11 +28,12 @@ declare -A cont_array=(
 	[diyhue]="diyHue"
 	[homebridge]="Homebridge"
 	[glances]="Glances"
+	[zigbee2mqttAssistant]="Zigbee2mqtt Assistant"
 
 )
 declare -a armhf_keys=("portainer" "nodered" "influxdb" "grafana" "mosquitto" "telegraf" "mariadb" "postgres"
 	"adminer" "openhab" "zigbee2mqtt" "pihole" "plex" "tasmoadmin" "rtl_433" "espruinohub"
-	"motioneye" "webthings_gateway" "blynk_server" "nextcloud" "diyhue" "homebridge" "glances")
+	"motioneye" "webthings_gateway" "blynk_server" "nextcloud" "diyhue" "homebridge" "glances" "zigbee2mqttAssistant")
 
 sys_arch=$(uname -m)
 
